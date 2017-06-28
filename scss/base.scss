@@ -1,0 +1,122 @@
+$primary-color: Honeydew;
+$secondary-color: Linen;
+$text-main-color: Goldenrod;
+
+$darkenSecondary-color: darken($secondary-color, 30%);
+
+
+$main-margin: 2em;
+$secondary-margin: 1em;
+$dropdown-margin-top: 5em;
+$dropdown-margin-side: 4em;
+
+
+html {
+  background-color: $primary-color;
+
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $main-margin;
+
+  .brandLogo {
+    color: $text-main-color;
+    font-size: 400%;
+    margin-bottom: $main-margin;
+  }
+
+  .directions {
+    color: $text-main-color;
+    font-size: 100%;
+    margin-bottom: $secondary-margin;
+    border-left: 17em;
+  }
+
+  .characterInfo {
+    color: $text-main-color;
+    font-size: 100%;
+    margin-top: $main-margin;
+    margin-left: $secondary-margin;
+  }
+
+  .dropdown-button {
+    margin-left: $main-margin;
+    margin-right: $main-margin;
+  }
+
+  #dropdown1 {
+    margin-left: $dropdown-margin-side;
+    margin-top: $dropdown-margin-top;
+  }
+
+  #dropdown2 {
+    margin-right: $dropdown-margin-side;
+    margin-top: $dropdown-margin-top;
+  }
+
+
+}
+
+
+#canvasDiv {
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  position: absolute;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/*#canvas {
+
+}*/
+
+.comicVine {
+  position: absolute;
+  top: 170px;
+  left: 200px;
+  right: 20px;
+
+}
+
+/*#canvas {
+  background-color
+}*/
+
+.input-field.inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+#text {
+  width:24%;
+}
+
+.random {
+  display: flex;
+  justify-content: center;
+}
+
+footer.page-footer {
+  display: flex;
+  flex-direction: row;
+  background-color: $secondary-color;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}

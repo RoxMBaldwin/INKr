@@ -1,0 +1,80 @@
+html {
+  background-color: Honeydew; }
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em; }
+  .nav-wrapper .brandLogo {
+    color: Goldenrod;
+    font-size: 400%;
+    margin-bottom: 2em; }
+  .nav-wrapper .directions {
+    color: Goldenrod;
+    font-size: 100%;
+    margin-bottom: 1em;
+    border-left: 17em; }
+  .nav-wrapper .characterInfo {
+    color: Goldenrod;
+    font-size: 100%;
+    margin-top: 2em;
+    margin-left: 1em; }
+  .nav-wrapper .dropdown-button {
+    margin-left: 2em;
+    margin-right: 2em; }
+  .nav-wrapper #dropdown1 {
+    margin-left: 4em;
+    margin-top: 5em; }
+  .nav-wrapper #dropdown2 {
+    margin-right: 4em;
+    margin-top: 5em; }
+
+#canvasDiv {
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  position: absolute; }
+
+.container {
+  display: flex;
+  justify-content: center; }
+
+/*#canvas {
+
+}*/
+.comicVine {
+  position: absolute;
+  top: 170px;
+  left: 200px;
+  right: 20px; }
+
+/*#canvas {
+  background-color
+}*/
+.input-field.inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+#text {
+  width: 24%; }
+
+.random {
+  display: flex;
+  justify-content: center; }
+
+footer.page-footer {
+  display: flex;
+  flex-direction: row;
+  background-color: Linen; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
+
+/*# sourceMappingURL=base.css.map */
