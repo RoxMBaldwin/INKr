@@ -54,11 +54,13 @@ body {
 main {
   flex: 1 0 auto; }
 
-#canvasDiv {
+canvas#canvas {
   display: flex;
   justify-content: center;
   z-index: 1;
   position: absolute; }
+  canvas#canvas #canvasDiv {
+    position: absolute; }
 
 .container {
   display: flex;
@@ -66,9 +68,6 @@ main {
 
 .comicVine {
   position: absolute;
-  top: 170px;
-  left: 200px;
-  right: 20px;
   z-index: 3; }
 
 img.charImage {
@@ -82,7 +81,8 @@ img.charImage {
   z-index: 2;
   top: 55px;
   left: 133px;
-  right: 40px; }
+  right: 40px;
+  background-attachment: fixed; }
 
 .input-field.inline {
   display: flex;
