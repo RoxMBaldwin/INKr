@@ -107,6 +107,7 @@ canvas#canvas {
 
   #canvasDiv {
     position: absolute;
+    
   }
 }
 
@@ -128,6 +129,12 @@ img.charImage {
   margin: 1em;
   border: 2em;
   border-color: Black;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -khtml-user-select: none;
 }
 
 .panel {

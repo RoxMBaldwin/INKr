@@ -74,7 +74,13 @@ img.charImage {
   padding: 1em;
   margin: 1em;
   border: 2em;
-  border-color: Black; }
+  border-color: Black;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -khtml-user-select: none; }
 
 .panel {
   position: absolute;
