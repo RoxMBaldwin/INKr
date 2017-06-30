@@ -1,6 +1,10 @@
 $(document).ready(function() {
   drawingApp.init();
 
+  $(".button-collapse").sideNav();
+
+  $(".dropdown-button").dropdown();
+
   $('#randomButton').click(addCharacter)
 
   $('#searchButton').click(searchCharacter)

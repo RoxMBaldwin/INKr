@@ -1,8 +1,12 @@
-$primary-color: Honeydew;
-$secondary-color: Linen;
+$primary-color: #7f785b;
+$secondary-color: #403C2E;
+$tertiary-color: #BFB489;
+$quad-color: #D0E58E;
+$penta-color: #FFF0B7;
 $text-main-color: Goldenrod;
 
 $darkenSecondary-color: darken($secondary-color, 30%);
+$darkenPrimary-color: darken($primary-color, 20%);
 
 
 $main-margin: 2em;
@@ -12,7 +16,7 @@ $dropdown-margin-side: 4em;
 
 
 html {
-  background-color: $primary-color;
+  background-color: white;
 
 }
 
@@ -20,19 +24,27 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: $main-margin;
+  margin-bottom: 5em;
+  background-color: $tertiary-color;
 
-  .brandLogo {
-    color: $text-main-color;
-    font-size: 400%;
-    margin-bottom: $main-margin;
+  .blank {
+    background-color: White;
+  }
+
+  a {
+    color: $secondary-color;
+    background-color: $tertiary-color;
   }
 
   .directions {
-    color: $text-main-color;
+    color: $secondary-color;
     font-size: 100%;
     margin-bottom: $secondary-margin;
     border-left: 17em;
+  }
+
+  .inkrDirections {
+    color: $secondary-color;
   }
 
   .characterInfo {
@@ -57,14 +69,33 @@ html {
     margin-top: $dropdown-margin-top;
   }
 
+  div.col.s12.m12 {
+    background-color: Goldenrod;
 
+    .logoCard{
+      margin-top: $main-margin;
+
+    }
+  }
+
+
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 
 #canvasDiv {
   display: flex;
   justify-content: center;
-  z-index: 0;
+  z-index: 1;
   position: absolute;
 }
 
@@ -82,12 +113,28 @@ html {
   top: 170px;
   left: 200px;
   right: 20px;
+  z-index: 3;
+
 
 }
 
-/*#canvas {
-  background-color
-}*/
+img.charImage {
+  padding: 1em;
+  margin: 1em;
+  border: 2em;
+  border-color: Black;
+}
+
+.panel {
+  position: absolute;
+  z-index: 2;
+  top: 55px;
+  left: 133px;
+  right: 40px;
+
+}
+
+
 
 .input-field.inline {
   display: flex;
@@ -105,18 +152,47 @@ html {
   justify-content: center;
 }
 
-footer.page-footer {
+#randomButton {
+  background-color: $secondary-color;
+  color: $penta-color;
+}
+
+#searchButton {
+  background-color: $secondary-color;
+  color: $penta-color;
+}
+
+footer {
   display: flex;
   flex-direction: row;
-  background-color: $secondary-color;
+  justify-content: space-between;
+  background-color: $tertiary-color;
+
+  .questionContainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: $primary-color;
+  }
+
+  a.gray-text.text-lighten-4.right {
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-end;
+  }
+
+  div.footerContainer {
+    display: flex;
+    align-content:
+  }
 }
 
-body {
+.githubContainer {
+  background-color: red;
+
+}
+
+#footsies {
   display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
+  justify-content: space-between;
+  color: $tertiary-color;
 }

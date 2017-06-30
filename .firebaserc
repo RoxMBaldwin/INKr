@@ -1,5 +1,6 @@
 {
   "projects": {
-    "staging": "inkrq1"
+    "staging": "inkrq1",
+    "default": "inkrq1"
   }
 }

@@ -12,98 +12,116 @@
     <header>
       <nav>
         <ul id="dropdown1" class="dropdown-content">
-          <li>INKr?</li>
-          <li>In the world of comic books,</li>
-          <li>an Inker is the one who inks in the color.</li>
-          <li></li>
-          <li>TO START</li>
-          <li>search a favorite character</li>
-          <li>or click random to explore</li>
-          <li></li>
-          <li>choose either crayon or marker</li>
-          <li>and choose a color</li>
-          <li></li>
-          <li>DRAW</li>
+          <li><a class="inkrDirections"href="#">INKr?</a></li>
+          <li><a class="inkrDirections"href="#">In the world of comic books,</a></li>
+          <li><a class="inkrDirections"href="#">an Inker is the one who inks in the color.</a></li>
+          <li><a class="inkrDirections"href="#"></li>
+          <li><a class="inkrDirections"href="#">TO START</li>
+          <li><a class="inkrDirections"href="#">[zoom in]</li>
+          <li><a class="inkrDirections"href="#">search a favorite character</a></li>
+          <li><a class="inkrDirections"href="#">or click random to explore</a></li>
+          <li><a class="inkrDirections"href="#">choose either crayon or marker</a></li>
+          <li><a class="inkrDirections"href="#">and choose a color</a></li>
+          <li><a class="inkrDirections"href="#"></a></li>
+          <li><a class="inkrDirections"href="#">DRAW</a></li>
         </ul>
         <ul id="dropdown2" class="dropdown-content">
-          <li>REAL NAME:</li>
-          <li id="charRealName"></li>
+          <li><a class="inkrDirections"href="#">REAL NAME:</a></li>
+          <li id="charRealName"><a class="inkrDirections"href="#"></a></li>
           <li>FIRST APPEARED IN ISSUE:</li>
           <li id="firstAppeared"></li>
           <li>DESCRIPTION:</li>
           <li id="charDescription"></li>
         </ul>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo center">INKr</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">INKr?<i class="material-icons left">arrow_drop_down</i></a></li>
-            <!-- <li><a href="#" class="characterInfo"></a>Character</li> -->
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><strong>INKr?</strong><i class="material-icons left">arrow_drop_down</i></a></li>
           </ul>
           <ul class="right hide-on-med-and-down">
-      <!-- Dropdown Trigger -->
-            <li><a id="charDropDown" class="dropdown-button" href="#!" data-activates="dropdown2">CHARACTER<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a id="charDropDown" class="dropdown-button" href="#!" data-activates="dropdown2"><strong>CHARACTER</strong><i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a class="blank" href="#"></a></li>
+            <li><a class="blank"href="#"></a></li>
+            <li><a class="blank" href="#"></a></li>
+            <li><a href="#"><em>INKr?</em></a></li>
+            <li><a href="#">In the world of comic books,</a></li>
+            <li><a href="#">an Inker is the one who inks in the color.</</a></li>
+            <li><a href="#"><em>TO START</em></a></li>
+            <li><a href="#">search a favorite character</a></li>
+            <li><a href="#">or click random to explore.</a></li>
+            <li><a href="#">choose either crayon or marker</a></li>
+            <li><a href="#">and choose a color</a></li>
+            <li><a href="#">&amp;</a></li>
+            <li><a href="#"><em>DRAW</em></a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <br>
-    <br>
-    <section class="userInput">
-    <div class="row">
-      <div class="col s12">
-        <div class="input-field inline">
-          <input id="text" class="charSearch" type="text" class="">
-          <label id="text" for="search" ></label>
-          <a id="searchButton" class="waves-effect waves-light btn"><i class="material-icons left">search</i>characters</a>
+    <main>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img class="logoCard" src="INKrImages/LogoCardINKr.png" alt="logoCard">
+              <span class="card-title"></span>
+            </div>
+          </div>
         </div>
-        <div class="random">
-          <a id="randomButton" class="waves-effect waves-light btn">random</a>
-        </div>
-        <img class="tester" src="" alt="">
       </div>
-    </div>
-  </section>
-  <br>
-  <div class="container" width="130%" height="130%">
-    <!-- <div class="row">
-      <div class="col l12 m12 s12"> -->
+      <section class="userInput">
+        <div class="row">
+          <div class="col s12">
+            <div class="input-field inline">
+              <input id="text" class="charSearch" type="text" class="">
+              <label id="text" for="search" ></label>
+              <a id="searchButton" class="waves-effect waves-light btn"><i class="material-icons left">search</i></a>
+            </div>
+            <div class="random">
+              <a id="randomButton" class="waves-effect waves-light btn">random</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container" width="130%" height="130%">
         <div id="canvasDiv">
           <div class="comicVine">
-            <img class="charImage" src="https://www.transparenttextures.com/patterns/debut-light.png"alt="character image" width="40%" height="40%" alt="">
+            <img class="charImage" src="https://www.designcuts.com/wp-content/uploads/2015/04/the-shop-design-cuts-beautifully-artistic-designer-kit-tutorial-101.jpg"alt="character image" width="40%" height="40%" border="5px" border-color="Black" alt="">
           </div>
-        </div>
-      <!-- </div>
-    </div> -->
-  </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<!-- [if IE]><script type="text/javascript" src="excanvas.js"></script><![endif] -->
-    <!-- <script type="text/javascript" src="html5-canvas-drawing-app.js"></script> -->
-    <!-- <script type="text/javascript">
-      drawingApp.init();
-    </script> -->
+          <div class="panel">
+            <img src="INKrImages/panely .png" alt="" width="70%" height="70%">
+          </div>
+      </div>
+    </div>
+    <div class="submit">
+      <button type="button" class="submitButton" name="button">submit</button>
+      <label for="submit"></label>
+    </div>
+    <div class="gallery">
+      <button type="button" class="galleryButton" name="gallery">gallery</button>
+      <label for="gallery"></label>
+    </div>
+  </main>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-            </ul>
-          </div>
+      <div id="footsies" class="questionContainer">
+        <div class="questions">
+          <h5 class="footerHeads">questions || concerns</h5>
+          <p class="questions">rox.m.baldwin@gmail.com</p>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      <div id="footsies" class="thanksContainer">
+        <div class="thanks">
+          <h5 class="footerHeads">special thanks to:</h5>
+          <ul>
+            <li><a class="thanks" href="http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/#demo-simple">william malone</a></li>
+            <li><a class="thanks" href="https://comicvine.gamespot.com/">comic vine</a></li>
+          </ul>
         </div>
+      </div>
+      <div id="footsies" class="githubContainer">
+        <a class="github" href="https://github.com/RoxMBaldwin/INKr">how INKr inks <br><img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="" height="30px"  width="30px"></a>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>

@@ -1,17 +1,20 @@
 html {
-  background-color: Honeydew; }
+  background-color: white; }
 
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2em; }
-  .nav-wrapper .brandLogo {
-    color: Goldenrod;
-    font-size: 400%;
-    margin-bottom: 2em; }
+  margin-bottom: 5em;
+  background-color: #BFB489; }
+  .nav-wrapper .blank {
+    background-color: White; }
+  .nav-wrapper a {
+    color: #7f785b;
+    background-color: #BFB489; }
   .nav-wrapper .directions {
     color: Goldenrod;
+    @important !
     font-size: 100%;
     margin-bottom: 1em;
     border-left: 17em; }
@@ -29,11 +32,15 @@ html {
   .nav-wrapper #dropdown2 {
     margin-right: 4em;
     margin-top: 5em; }
+  .nav-wrapper div.col.s12.m12 {
+    background-color: Goldenrod; }
+    .nav-wrapper div.col.s12.m12 .logoCard {
+      margin-top: 2em; }
 
 #canvasDiv {
   display: flex;
   justify-content: center;
-  z-index: 0;
+  z-index: 1;
   position: absolute; }
 
 .container {
@@ -47,7 +54,21 @@ html {
   position: absolute;
   top: 170px;
   left: 200px;
-  right: 20px; }
+  right: 20px;
+  z-index: 3; }
+
+img.charImage {
+  padding: 1em;
+  margin: 1em;
+  border: 2em;
+  border-color: Black; }
+
+.panel {
+  position: absolute;
+  z-index: 2;
+  top: 55px;
+  left: 133px;
+  right: 40px; }
 
 /*#canvas {
   background-color
@@ -64,10 +85,18 @@ html {
   display: flex;
   justify-content: center; }
 
+#randomButton {
+  background-color: #403C2E;
+  color: #FFF0B7; }
+
+#searchButton {
+  background-color: #403C2E;
+  color: #FFF0B7; }
+
 footer.page-footer {
   display: flex;
   flex-direction: row;
-  background-color: Linen; }
+  background-color: #BFB489; }
 
 body {
   display: flex;
