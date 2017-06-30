@@ -1,6 +1,6 @@
 # INKr
 
-![Image](src="INKrImages/LogoCardINKr.png")
+![Image]("INKrImages/LogoCardINKr.png")
 
 ## INKr?:
 
