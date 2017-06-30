@@ -17,15 +17,13 @@ $dropdown-margin-side: 4em;
 
 html {
   background-color: white;
-
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .charDropInfo {
-  background-color: $tertiary-color;
-}
-
-.dropAnswer {
   background-color: $secondary-color;
+  color: $secondary-color;
+
 }
 
 .nav-wrapper {
@@ -55,6 +53,11 @@ html {
     color: $secondary-color;
   }
 
+  .dropdown-content li>a, .dropdown-content li>span {
+    color: #403C2E;
+    padding: 0em;
+  }
+
   .characterInfo {
     color: $text-main-color;
     font-size: 100%;
@@ -78,15 +81,12 @@ html {
   }
 
   div.col.s12.m12 {
-    background-color: Goldenrod;
+    background-color: white;
 
     .logoCard{
       margin-top: $main-margin;
-
     }
   }
-
-
 }
 
 body {
@@ -98,7 +98,6 @@ body {
 main {
   flex: 1 0 auto;
 }
-
 
 #canvasDiv {
   display: flex;
@@ -112,18 +111,12 @@ main {
   justify-content: center;
 }
 
-/*#canvas {
-
-}*/
-
 .comicVine {
   position: absolute;
   top: 170px;
   left: 200px;
   right: 20px;
   z-index: 3;
-
-
 }
 
 img.charImage {
@@ -139,16 +132,12 @@ img.charImage {
   top: 55px;
   left: 133px;
   right: 40px;
-
 }
-
-
 
 .input-field.inline {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
 #text {
@@ -163,6 +152,7 @@ img.charImage {
 #randomButton {
   background-color: $secondary-color;
   color: $penta-color;
+  margin-left: 4.5em;
 }
 
 #searchButton {
@@ -170,48 +160,99 @@ img.charImage {
   color: $penta-color;
 }
 
-.lowerButtons {
-  padding-top: 20em;
-  border: 20em;
-  margin-top: 20em;
-
+div.hover {
+  color: white
 }
 
-#galleryButton {
+.hover {
+  position: relative;
+  display: inline-block;
+}
+
+.hover .hoverText {
+  visibility: hidden;
+  width: 120px;
   background-color: $primary-color;
+  color: $penta-color;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
 }
 
-footer {
+.hover:hover .hoverText {
+  visibility: visible;
+}
+
+footer.page-footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   background-color: $tertiary-color;
+  color: $secondary-color;
 
-  .questionContainer {
+  div.row {
     display: flex;
-    justify-content: space-around;
-    background-color: $primary-color;
+    flex-direction: column;
+    margin-bottom: 0em;
+
+
+    #thankYou {
+      text-align: right;
+      padding-top: 0em;
+      display: flex;
+      flex-direction: row;
+
+
+      img {
+        margin: 1em;
+      }
+
+
+      a.biblio {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        color: $quad-color;
+        text-align: center;
+      }
+
+      h5 {
+        color: $primary-color
+
+      }
+    }
+
+    #questionsConcerns {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      text-align: center;
+      padding-top: 0em;
+
+      h5 {
+        color: $primary-color;
+      }
+    }
   }
 
-  a.gray-text.text-lighten-4.right {
-    display: flex;
-    align-content: flex-start;
-    justify-content: flex-end;
+    .container {
+      margin-bottom: 0em;
+      color: $quad-color;
+
+    .footer-copyright {
+      padding-top: 4em;
+    }
+
+    .xxx {
+      color: $quad-color;
+      }
+    }
   }
 
-  div.footerContainer {
-    display: flex;
-    align-content:
-  }
-}
-
-.githubContainer {
-  background-color: red;
-
-}
-
-#footsies {
-  display: flex;
-  justify-content: space-between;
+#thankYou {
   color: $tertiary-color;
+
+
 }

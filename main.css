@@ -1,6 +1,4 @@
-html {
-  background-color: DarkSeaGreen;
-}
+
 
 
 #canvasDiv {
@@ -8,21 +6,6 @@ html {
   justify-content: center;
 }
 
-/*#canvas {
-
-}*/
-
-.comicVine {
-  position: absolute;
-  top: 270px;
-  left: 185px;
-  background: transparent url(https://comicvine.gamespot.com/api/image/scale_large/2685119-morpheus.jpg);
-
-}
-
-/*#canvas {
-  background-color
-}*/
 
 .input-field.inline {
   display: flex;
@@ -31,8 +14,11 @@ html {
 
 }
 
-#text {
-  width:24%;
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3.5em;
+
 }
 
 .random {
@@ -40,10 +26,23 @@ html {
   justify-content: center;
 }
 
-footer.page-footer {
+.container2 {
   display: flex;
   flex-direction: row;
 }
+
+.footer-copyright {
+  padding: 4em;
+}
+
+
+footer.page-footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0em;
+}
+
+
 
 body {
   display: flex;

@@ -1,6 +1,7 @@
 {
   "projects": {
     "staging": "inkrq1",
-    "default": "inkrq1"
+    "default": "inkrq1",
+    "codeFreeze": "inkrq1"
   }
 }

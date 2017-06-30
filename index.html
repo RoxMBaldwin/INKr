@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>quarter1</title>
+    <title>INKr</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="/main.css">
   </head>
   <body>
     <header>
@@ -76,10 +78,16 @@
             <div class="input-field inline">
               <input id="text" class="charSearch" type="text" class="">
               <label id="text" for="search" ></label>
-              <a id="searchButton" class="waves-effect waves-light btn"><i class="material-icons left">search</i></a>
+              <a id="searchButton" class="waves-effect waves-light btn"><i class="material-icons">search</i></a>
+              <div class="hover">VBGHFTHDTSH
+              <span class="hoverText">search for comic book character</span>
+              </div>
             </div>
             <div class="random">
-              <a id="randomButton" class="waves-effect waves-light btn">random</a>
+              <a id="randomButton" class="waves-effect waves-light btn"><i class="material-icons">shuffle</i></a>
+              <div class="hover">VBGHFTHDTSH
+              <span class="hoverText">random</span>
+              </div>
             </div>
           </div>
         </div>
@@ -96,38 +104,51 @@
     </div>
   </main>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <section class="lowerButtons">
-    <div class="row">
-      <div class="container">
-        <div class="submit">
-          <a class="waves-effect waves-light btn"><i class="material-icons left">library_add</i>submit</a>
-        </div>
-      <div class="gallery">
-        <a id="galleryButton" class="waves-effect waves-light btn"><i class="material-icons left">dashboard</i>gallery</a>
+<section class="lowerButtons">
+    <div class="container">
+      <div class="saveDrawing">
+        <a id="randomButton" class="waves-effect waves-light btn"><i class="material-icons">library_add</i></a>
+        <div class="hover">VBGH
+        <span class="hoverText">save to gallery</span>
       </div>
-    </div>
+      </div>
+      <div class="viewGallery">
+        <a id="randomButton" class="waves-effect waves-light btn"><i class="material-icons">dashboard</i></a>
+        <div class="hover">VBGH
+        <span class="hoverText">your gallery</span>
+      </div>
+      </div>
   </div>
 </section>
     <footer class="page-footer">
-      <div id="footsies" class="questionContainer">
-        <div class="questions">
-          <h5 class="footerHeads">questions || concerns</h5>
-          <p class="questions">rox.m.baldwin@gmail.com</p>
+        <div class="row">
+          <div id="questionsConcerns" class="col l12 m12 s12">
+              <h5>questions || concerns</h5>
+              <p class="grey-text text-lighten-4">rox.m.baldwin@gmail.com</p>
+            </div>
+            <div class="spaceSpacespace" height="20%" width="20%">
+            </div>
+            <div id="thankYou" class="col l4 offset-l2 s12">
+              <h5>special thanks to:</h5>
+              <ul>
+                <br>
+                <br>
+                <li><a class="biblio" href="http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/#demo-simple">william malone: HTML canvas</a></li>
+                <br>
+                <br>
+                <li><a class="biblio" href="https://comicvine.gamespot.com/">comic vine</a></li>
+                <br>
+                <li><a class="biblio" href="https://github.com/RoxMBaldwin/INKr"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="" height="30px"  width="30px">how INKr inks</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-copyright">
+          <div class="container">
+          © 2017 THE.SPACE.LEGS.COLLECTIVE
+          <a class="xxx">&#9747;&#9747;&#9747;</a>
+          </div>
         </div>
-      </div>
-      <div id="footsies" class="thanksContainer">
-        <div class="thanks">
-          <h5 class="footerHeads">special thanks to:</h5>
-          <ul>
-            <li><a class="thanks" href="http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/#demo-simple">william malone</a></li>
-            <li><a class="thanks" href="https://comicvine.gamespot.com/">comic vine</a></li>
-          </ul>
-        </div>
-      </div>
-      <div id="footsies" class="githubContainer" color="Red">
-        <a class="github" href="https://github.com/RoxMBaldwin/INKr">how INKr inks <br><img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="" height="30px"  width="30px"></a>
-      </div>
-    </footer>
+      </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <!-- <script type="text/javascript" src="/Users/space.legs/playGround/Projects/1quarter/INKr/Simple-HTML5-Drawing-App/excanvas.js"></script>
