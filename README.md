@@ -11,7 +11,7 @@ INKr's primary function is to instill creativity and light-hearted fun while int
 Test the application for yourself at [https://inkrq1.firebaseapp.com](https://inkrq1.firebaseapp.com/)
 * The 'Save to Gallery' and 'Your Gallery' features are currently unavailable
 
-Or view a demo video at [DemoVideo](INKrImages/INKrSS2.png)
+Or view a demo video at [DemoVideo](https://youtu.be/OOCVDGckzUg)
 
 ![Image](INKrImages/INKrSS1.png)
 
