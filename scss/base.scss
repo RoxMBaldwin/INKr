@@ -20,6 +20,14 @@ html {
 
 }
 
+.charDropInfo {
+  background-color: $tertiary-color;
+}
+
+.dropAnswer {
+  background-color: $secondary-color;
+}
+
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -160,6 +168,17 @@ img.charImage {
 #searchButton {
   background-color: $secondary-color;
   color: $penta-color;
+}
+
+.lowerButtons {
+  padding-top: 20em;
+  border: 20em;
+  margin-top: 20em;
+
+}
+
+#galleryButton {
+  background-color: $primary-color;
 }
 
 footer {

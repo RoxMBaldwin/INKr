@@ -26,11 +26,11 @@
           <li><a class="inkrDirections"href="#">DRAW</a></li>
         </ul>
         <ul id="dropdown2" class="dropdown-content">
-          <li><a class="inkrDirections"href="#">REAL NAME:</a></li>
-          <li id="charRealName"><a class="inkrDirections"href="#"></a></li>
-          <li>FIRST APPEARED IN ISSUE:</li>
+          <li><a class="charDropInfo"href="#">REAL NAME:</a></li>
+          <li id="charRealName" class=""></a></li>
+          <li><a class="charDropInfo"href="#">FIRST APPEARED IN ISSUE:</li>
           <li id="firstAppeared"></li>
-          <li>DESCRIPTION:</li>
+          <li><a class="charDropInfo"href="#">DESCRIPTION:</a></li>
           <li id="charDescription"></li>
         </ul>
         <div class="nav-wrapper">
@@ -94,16 +94,20 @@
           </div>
       </div>
     </div>
-    <div class="submit">
-      <button type="button" class="submitButton" name="button">submit</button>
-      <label for="submit"></label>
-    </div>
-    <div class="gallery">
-      <button type="button" class="galleryButton" name="gallery">gallery</button>
-      <label for="gallery"></label>
-    </div>
   </main>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <section class="lowerButtons">
+    <div class="row">
+      <div class="container">
+        <div class="submit">
+          <a class="waves-effect waves-light btn"><i class="material-icons left">library_add</i>submit</a>
+        </div>
+      <div class="gallery">
+        <a id="galleryButton" class="waves-effect waves-light btn"><i class="material-icons left">dashboard</i>gallery</a>
+      </div>
+    </div>
+  </div>
+</section>
     <footer class="page-footer">
       <div id="footsies" class="questionContainer">
         <div class="questions">
@@ -120,7 +124,7 @@
           </ul>
         </div>
       </div>
-      <div id="footsies" class="githubContainer">
+      <div id="footsies" class="githubContainer" color="Red">
         <a class="github" href="https://github.com/RoxMBaldwin/INKr">how INKr inks <br><img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="" height="30px"  width="30px"></a>
       </div>
     </footer>
