@@ -17,16 +17,22 @@ html {
   .nav-wrapper a {
     color: #403C2E;
     background-color: #BFB489; }
-  .nav-wrapper .directions {
-    color: #403C2E;
-    font-size: 100%;
-    margin-bottom: 1em;
-    border-left: 17em; }
+  .nav-wrapper .subheaderDropdown {
+    color: #7f785b;
+    background-color: #D0E58E;
+    margin: 0;
+    padding: 0em 1em 0em .5em; }
   .nav-wrapper .inkrDirections {
-    color: #403C2E; }
+    color: #403C2E;
+    background-color: #BFB489;
+    margin: 0;
+    padding: 0em 1em 0em 1em; }
   .nav-wrapper .dropdown-content li > a, .nav-wrapper .dropdown-content li > span {
     color: #403C2E;
     padding: 0em; }
+  .nav-wrapper .dropdown-content li {
+    min-height: 0;
+    line-height: 1.75rem; }
   .nav-wrapper .characterInfo {
     color: Goldenrod;
     font-size: 100%;

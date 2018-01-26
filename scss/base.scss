@@ -42,20 +42,28 @@ html {
     background-color: $tertiary-color;
   }
 
-  .directions {
-    color: $secondary-color;
-    font-size: 100%;
-    margin-bottom: $secondary-margin;
-    border-left: 17em;
+  .subheaderDropdown {
+    color: $primary-color;
+    background-color: $quad-color;
+    margin: 0;
+    padding: 0em 1em 0em .5em;
   }
 
   .inkrDirections {
     color: $secondary-color;
+    background-color: $tertiary-color;
+    margin: 0;
+    padding: 0em 1em 0em 1em;
   }
 
   .dropdown-content li>a, .dropdown-content li>span {
     color: #403C2E;
     padding: 0em;
+  }
+
+  .dropdown-content li {
+    min-height: 0;
+    line-height: 1.75rem;
   }
 
   .characterInfo {
@@ -107,7 +115,7 @@ canvas#canvas {
 
   #canvasDiv {
     position: absolute;
-    
+
   }
 }
 

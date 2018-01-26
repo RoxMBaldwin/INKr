@@ -49,19 +49,19 @@ function searchCharacter(event) {
 
   $.get(url + userCharacter + formatJson)
     .then(displayCharInfo)
-  } //searchCharacter function
+}
 
-  function displayCharInfo(data){
+function displayCharInfo(data){
 
-  var formalCharName = data.results[0].name
-  var realName = data.results[0].real_name
-  var firstAppeared = data.results[0].first_appeared_in_issue.name
-  var charDescription = data.results[0].deck
-  var chosenImage = data.results[0].image.medium_url
+var formalCharName = data.results[0].name
+var realName = data.results[0].real_name
+var firstAppeared = data.results[0].first_appeared_in_issue.name
+var charDescription = data.results[0].deck
+var chosenImage = data.results[0].image.medium_url
 
-  $charDropDown.text(formalCharName)
-  $charRealName.text(realName)
-  $firstAppeared.text(firstAppeared)
-  $charDescription.text(charDescription)
-  $charImage.attr('src', chosenImage)
-  }
+$charDropDown.text(formalCharName)
+$charRealName.text(realName)
+$firstAppeared.text(firstAppeared)
+$charDescription.text(charDescription)
+$charImage.attr('src', chosenImage)
+}
