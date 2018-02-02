@@ -1,7 +1,7 @@
-$primary-color: #7f785b;
+$primary-color: #9E8C6D;
 $secondary-color: #403C2E;
-$tertiary-color: #BFB489;
-$quad-color: #D0E58E;
+$tertiary-color: #C4C4B5;
+$quad-color: #96922B;
 $penta-color: #FFF0B7;
 $text-main-color: Goldenrod;
 
@@ -23,7 +23,6 @@ html {
 .charDropInfo {
   background-color: $secondary-color;
   color: $secondary-color;
-
 }
 
 .nav-wrapper {
@@ -43,21 +42,21 @@ html {
   }
 
   .subheaderDropdown {
-    color: $primary-color;
+    color: $tertiary-color;
     background-color: $quad-color;
     margin: 0;
     padding: 0em 1em 0em .5em;
   }
 
   .inkrDirections {
-    color: $secondary-color;
+    color: $primary-color;
     background-color: $tertiary-color;
     margin: 0;
     padding: 0em 1em 0em 1em;
   }
 
   .dropdown-content li>a, .dropdown-content li>span {
-    color: #403C2E;
+    color: $primary-color;
     padding: 0em;
   }
 
@@ -74,8 +73,8 @@ html {
   }
 
   .dropdown-button {
-    margin-left: $main-margin;
-    margin-right: $main-margin;
+    margin: $main-margin;
+    color: $quad-color;
   }
 
   #dropdown1 {
@@ -105,6 +104,16 @@ body {
 
 main {
   flex: 1 0 auto;
+  margin-bottom: 34em;
+
+  div.input-field.inline {
+    align-self: center;
+
+    input#text.charSearch {
+      width: 16%;
+      margin-left: 6em;
+    }
+  }
 }
 
 canvas#canvas {
@@ -215,45 +224,45 @@ footer.page-footer {
   div.row {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 0em;
 
-
-    #thankYou {
+    .thankYou {
       text-align: right;
       padding-top: 0em;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      text-align: center;
 
-
-      img {
-        margin: 1em;
+      .footerSub {
+        color: $primary-color;
       }
 
+      img {
+        margin-right: 1em;
+      }
 
       a.biblio {
-        display: flex;
-        flex-direction: column;
         align-items: baseline;
         color: $quad-color;
-        text-align: center;
       }
 
       h5 {
         color: $primary-color
-
       }
     }
 
-    #questionsConcerns {
+    .questionsConcerns {
       display: flex;
       flex-direction: column;
       align-content: center;
       text-align: center;
-      padding-top: 0em;
+      padding: 1em 0em 1em 0em;
 
-      h5 {
+      .footerSub {
         color: $primary-color;
       }
+
     }
   }
 
@@ -270,9 +279,3 @@ footer.page-footer {
       }
     }
   }
-
-#thankYou {
-  color: $tertiary-color;
-
-
-}
