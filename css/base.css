@@ -11,7 +11,8 @@ html {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5em;
-  background-color: #C4C4B5; }
+  background-color: #C4C4B5;
+  width: 140%; }
   .nav-wrapper .blank {
     background-color: White; }
   .nav-wrapper a {
@@ -40,7 +41,8 @@ html {
     margin-left: 1em; }
   .nav-wrapper .dropdown-button {
     margin: 2em;
-    color: #96922B; }
+    color: #96922B;
+    font-size: 120%; }
   .nav-wrapper #dropdown1 {
     margin-left: 4em;
     margin-top: 5em; }
@@ -79,7 +81,8 @@ canvas#canvas {
   justify-content: center; }
 
 .comicVine {
-  position: absolute;
+  display: flex;
+  justify-content: center;
   z-index: 3; }
 
 img.charImage {

@@ -31,6 +31,7 @@ html {
   align-items: center;
   margin-bottom: 5em;
   background-color: $tertiary-color;
+  width: 140%;
 
   .blank {
     background-color: White;
@@ -75,6 +76,7 @@ html {
   .dropdown-button {
     margin: $main-margin;
     color: $quad-color;
+    font-size: 120%;
   }
 
   #dropdown1 {
@@ -134,7 +136,8 @@ canvas#canvas {
 }
 
 .comicVine {
-  position: absolute;
+  display: flex;
+  justify-content: center;
   // top: 620px;
   // left: 625px;
   // right: 20px;
@@ -266,16 +269,28 @@ footer.page-footer {
     }
   }
 
-    .container {
-      margin-bottom: 0em;
-      color: $quad-color;
+  .container {
+    margin-bottom: 0em;
+    color: $quad-color;
 
-    .footer-copyright {
-      padding-top: 4em;
-    }
+  .footer-copyright {
+    padding-top: 4em;
+  }
 
-    .xxx {
-      color: $quad-color;
-      }
+  .xxx {
+    color: $quad-color;
     }
   }
+}
+
+//
+// @media (max-width: 401px) {
+//   canvas#canvas {
+//     display: flex;
+//     justify-content: center;
+//     z-index: 1;
+//     position: absolute;
+//     width: 96%;
+//
+//   }
+// }
