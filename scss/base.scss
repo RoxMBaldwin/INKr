@@ -31,7 +31,11 @@ html {
   align-items: center;
   margin-bottom: 5em;
   background-color: $tertiary-color;
-  width: 140%;
+  width: 100%;
+
+  ul#mobile-demo.side-nav {
+    background-color: $tertiary-color;
+  }
 
   .blank {
     background-color: White;

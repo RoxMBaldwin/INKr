@@ -12,7 +12,9 @@ html {
   align-items: center;
   margin-bottom: 5em;
   background-color: #C4C4B5;
-  width: 140%; }
+  width: 100%; }
+  .nav-wrapper ul#mobile-demo.side-nav {
+    background-color: #C4C4B5; }
   .nav-wrapper .blank {
     background-color: White; }
   .nav-wrapper a {
