@@ -158,6 +158,27 @@ footer.page-footer {
     flex-direction: column;
     align-items: center;
     margin-bottom: 0em; }
+    footer.page-footer div.row .questionsConcerns {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      text-align: center;
+      padding: 1em 0em 1em 0em;
+      color: #9E8C6D; }
+      footer.page-footer div.row .questionsConcerns div.inkrGithubContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center; }
+        footer.page-footer div.row .questionsConcerns div.inkrGithubContainer p.inkrGithub {
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          justify-content: center; }
+        footer.page-footer div.row .questionsConcerns div.inkrGithubContainer a.biblio {
+          color: white; }
+      footer.page-footer div.row .questionsConcerns img.githubLogo {
+        margin: 0 1em 0 0; }
     footer.page-footer div.row .thankYou {
       text-align: right;
       padding-top: 0em;
@@ -173,20 +194,16 @@ footer.page-footer {
         color: #96922B; }
       footer.page-footer div.row .thankYou h5 {
         color: #9E8C6D; }
-    footer.page-footer div.row .questionsConcerns {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      text-align: center;
-      padding: 1em 0em 1em 0em; }
-      footer.page-footer div.row .questionsConcerns .footerSub {
-        color: #9E8C6D; }
-  footer.page-footer .container {
-    margin-bottom: 0em;
-    color: #96922B; }
-    footer.page-footer .container .footer-copyright {
-      padding-top: 4em; }
-    footer.page-footer .container .xxx {
+  footer.page-footer .footer-copyright {
+    padding-top: 4em; }
+    footer.page-footer .footer-copyright .container {
+      margin-bottom: 0em;
       color: #96922B; }
+      footer.page-footer .footer-copyright .container .roxGithub {
+        display: flex;
+        flex-direction: row;
+        color: #96922B; }
+        footer.page-footer .footer-copyright .container .roxGithub img.githubLogo {
+          margin: 0 1em 0 0; }
 
 /*# sourceMappingURL=base.css.map */

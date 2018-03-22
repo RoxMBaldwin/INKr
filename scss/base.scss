@@ -230,6 +230,38 @@ footer.page-footer {
     align-items: center;
     margin-bottom: 0em;
 
+    .questionsConcerns {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      text-align: center;
+      padding: 1em 0em 1em 0em;
+      color: $primary-color;
+
+      div.inkrGithubContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+
+        p.inkrGithub {
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          justify-content: center;
+        }
+
+        a.biblio {
+          color : white;
+        }
+      }
+
+      img.githubLogo {
+        margin: 0 1em 0 0;
+      }
+
+    }
+
     .thankYou {
       text-align: right;
       padding-top: 0em;
@@ -253,36 +285,30 @@ footer.page-footer {
       h5 {
         color: $primary-color
       }
-    }
-
-    .questionsConcerns {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      text-align: center;
-      padding: 1em 0em 1em 0em;
-
-      .footerSub {
-        color: $primary-color;
-      }
 
     }
   }
-
-  .container {
-    margin-bottom: 0em;
-    color: $quad-color;
 
   .footer-copyright {
     padding-top: 4em;
-  }
 
-  .xxx {
-    color: $quad-color;
+    .container {
+      margin-bottom: 0em;
+      color: $quad-color;
+
+      .roxGithub {
+        display: flex;
+        flex-direction: row;
+        color: $quad-color;
+
+        img.githubLogo {
+          margin: 0 1em 0 0;
+        }
+
+      }
     }
   }
 }
-
 //
 // @media (max-width: 401px) {
 //   canvas#canvas {
