@@ -1,37 +1,42 @@
 html {
-  background-color: white;
+  background-color: #fdffff;
   font-family: 'Fira Sans', sans-serif; }
 
 .charDropInfo {
-  background-color: #403C2E;
-  color: #403C2E; }
+  background-color: #fdffff;
+  color: #000000; }
 
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5em;
-  background-color: #C4C4B5;
+  background-color: #fdffff;
   width: 100%; }
   .nav-wrapper ul#mobile-demo.side-nav {
-    background-color: #C4C4B5; }
+    background-color: #fdffff; }
   .nav-wrapper .blank {
     background-color: White; }
   .nav-wrapper a {
-    color: #403C2E;
-    background-color: #C4C4B5; }
+    color: #000000;
+    background-color: #fdffff; }
   .nav-wrapper .subheaderDropdown {
-    color: #C4C4B5;
-    background-color: #96922B;
+    font-family: "Dokdo", cursive;
+    font-size: 26px;
+    font-weight: lighter;
+    color: #000000;
+    background-color: #fdffff;
     margin: 0;
-    padding: 0em 1em 0em .5em; }
+    padding: 0em 1em 0em .5em;
+    font-weight: lighter; }
   .nav-wrapper .inkrDirections {
-    color: #9E8C6D;
-    background-color: #C4C4B5;
+    color: #000000;
+    background-color: #fdffff;
     margin: 0;
-    padding: 0em 1em 0em 1em; }
+    padding: 0em 1em 0em 1em;
+    font-weight: lighter; }
   .nav-wrapper .dropdown-content li > a, .nav-wrapper .dropdown-content li > span {
-    color: #9E8C6D;
+    color: #000000;
     padding: 0em; }
   .nav-wrapper .dropdown-content li {
     min-height: 0;
@@ -40,17 +45,20 @@ html {
     color: Goldenrod;
     font-size: 100%;
     margin-top: 2em;
-    margin-left: 1em; }
-  .nav-wrapper .dropdown-button {
+    margin-left: 1em;
+    font-weight: lighter; }
+  .nav-wrapper a.dropdown-button {
+    font-family: "Dokdo", cursive;
     margin: 2em;
-    color: #96922B;
-    font-size: 120%; }
+    color: #000000;
+    font-size: 30px; }
   .nav-wrapper #dropdown1 {
     margin-left: 4em;
     margin-top: 5em; }
   .nav-wrapper #dropdown2 {
     margin-right: 4em;
-    margin-top: 5em; }
+    margin-top: 5em;
+    width: 100%; }
   .nav-wrapper div.col.s12.m12 {
     background-color: white; }
     .nav-wrapper div.col.s12.m12 .logoCard {
@@ -64,11 +72,67 @@ body {
 main {
   flex: 1 0 auto;
   margin-bottom: 34em; }
-  main div.input-field.inline {
-    align-self: center; }
-    main div.input-field.inline input#text.charSearch {
-      width: 16%;
-      margin-left: 6em; }
+  main div.row1 {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000000;
+    margin: 10px; }
+    main div.row1 div.innerRow {
+      display: flex;
+      justify-content: center;
+      width: 96%;
+      margin: 4px;
+      border: 2px solid #000000; }
+      main div.row1 div.innerRow h3.inkrName {
+        font-family: "Dokdo", cursive;
+        font-size: 100px; }
+  main section.userInput .row2 {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000000;
+    margin: 10px; }
+    main section.userInput .row2 div.innerRow2 {
+      display: flex;
+      justify-content: center;
+      width: 96%;
+      margin: 4px;
+      border: 2px solid #000000; }
+      main section.userInput .row2 div.innerRow2 div.col {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+        main section.userInput .row2 div.innerRow2 div.col div.input-field.inline {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-self: center; }
+          main section.userInput .row2 div.innerRow2 div.col div.input-field.inline input#text.charSearch {
+            width: 60%;
+            margin-right: 10%;
+            margin-bottom: 0; }
+          main section.userInput .row2 div.innerRow2 div.col div.input-field.inline a#searchButton {
+            background-color: #fdffff;
+            color: #000000;
+            border: 2px solid #000000;
+            border-radius: 10%; }
+          main section.userInput .row2 div.innerRow2 div.col div.input-field.inline a#searchButton:hover {
+            background-color: #C4C4B5; }
+        main section.userInput .row2 div.innerRow2 div.col div.random {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 20px 0 20px 0; }
+          main section.userInput .row2 div.innerRow2 div.col div.random a#randomButton {
+            background-color: #fdffff;
+            color: #000000;
+            border: 2px solid #000000;
+            border-radius: 10%; }
+          main section.userInput .row2 div.innerRow2 div.col div.random a#randomButton:hover {
+            background-color: #C4C4B5; }
+
+.container {
+  display: flex;
+  justify-content: center; }
 
 canvas#canvas {
   display: flex;
@@ -78,26 +142,20 @@ canvas#canvas {
   canvas#canvas #canvasDiv {
     position: absolute; }
 
-.container {
-  display: flex;
-  justify-content: center; }
-
 .comicVine {
   display: flex;
   justify-content: center;
   z-index: 3; }
-
-img.charImage {
-  padding: 1em;
-  margin: 1em;
-  border: 2em;
-  border-color: Black;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -khtml-user-select: none; }
+  .comicVine img.charImage {
+    padding: 1em;
+    margin: 1em;
+    border: 2em;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -khtml-user-select: none; }
 
 .panel {
   position: absolute;
@@ -106,48 +164,6 @@ img.charImage {
   left: 133px;
   right: 40px;
   background-attachment: fixed; }
-
-.input-field.inline {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-#text {
-  width: 24%; }
-
-.random {
-  display: flex;
-  justify-content: center; }
-
-#randomButton {
-  background-color: #403C2E;
-  color: #FFF0B7;
-  margin-left: 4.5em; }
-
-#searchButton {
-  background-color: #403C2E;
-  color: #FFF0B7; }
-
-div.hover {
-  color: white; }
-
-.hover {
-  position: relative;
-  display: inline-block; }
-
-.hover .hoverText {
-  visibility: hidden;
-  width: 120px;
-  background-color: #9E8C6D;
-  color: #FFF0B7;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1; }
-
-.hover:hover .hoverText {
-  visibility: visible; }
 
 footer.page-footer {
   display: flex;

@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="/main.css">
   </head>
@@ -17,10 +18,10 @@
           <li><p class="subheaderDropdown">INKr?</p></li>
           <li><p class="inkrDirections">In the world of comic books, an Inker is the one who inks in the color.</p></li>
           <li><p class="subheaderDropdown">TO START:</p></li>
-          <li><p class="inkrDirections">&raquo; <b>search for a favorite character or click random to explore</p></li>
+          <li><p class="inkrDirections">&raquo; search for a favorite character or click random to explore</p></li>
           <li><p class="inkrDirections">&raquo; choose either crayon or marker</p></li>
           <li><p class="inkrDirections">&raquo; choose a color</p></li>
-          <li><p class="inkrDirections">&raquo; <b>draw</b></a></li>
+          <li><p class="inkrDirections">&raquo; draw</a></li>
         </ul>
         <ul id="dropdown2" class="dropdown-content">
           <li><p class="subheaderDropdown">REAL NAME:</p></li>
@@ -33,10 +34,14 @@
         <div class="nav-wrapper">
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><strong>INKr?</strong><i class="material-icons left">arrow_drop_down</i></a></li>
+            <li>
+              <a class="dropdown-button" href="#!" data-activates="dropdown1">INKr?<i class="material-icons left">arrow_drop_down</i></a>
+            </li>
           </ul>
           <ul class="right hide-on-med-and-down">
-            <li><a id="charDropDown" class="dropdown-button" href="#!" data-activates="dropdown2"><strong>CHARACTER</strong><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li>
+              <a id="charDropDown" class="dropdown-button" href="#!" data-activates="dropdown2">CHARACTER<i class="material-icons right">arrow_drop_down</i></a>
+            </li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li><p class="subheaderDropdown">INKr?</p></li>
@@ -51,31 +56,34 @@
       </nav>
     </header>
     <main>
-      <div class="row">
-        <div class="col s12 m12">
-          <div class="card">
-            <div class="card-image">
-              <img class="logoCard" src="INKrImages/LogoCardINKr.png" alt="logoCard">
-              <span class="card-title"></span>
+      <div class="row1">
+        <div class="innerRow">
+        <!-- <div class="col s12 m12"> -->
+          <!-- <div class="card">
+            <div class="card-image"> -->
+              <!-- <img class="logoCard" src="INKrImages/LogoCardINKr.png" alt="logoCard"> -->
+              <h3 class="inkrName">INKr</h3>
+              <!-- <span class="card-title"></span>
             </div>
-          </div>
+          </div> -->
+        <!-- </div> -->
         </div>
       </div>
       <section class="userInput">
-        <div class="row">
-          <div class="col s12">
-            <div class="input-field inline">
-              <input id="text" class="charSearch" type="text" class="">
-              <label id="text" for="search" ></label>
-              <a id="searchButton" class="waves-effect waves-light btn"><i class="material-icons">search</i></a>
-              <div class="hover">VBGHFTHDTSH
-              <span class="hoverText">search for comic book character</span>
+        <div class="row2">
+          <div class="innerRow2">
+            <div class="col">
+              <div class="input-field inline">
+                <label id="text" for="search" ></label>
+                <input id="text" class="charSearch" type="text" class="">
+                <a id="searchButton" class="waves-effect waves-light btn">
+                  <i class="material-icons">search</i>
+                </a>
               </div>
-            </div>
-            <div class="random">
-              <a id="randomButton" class="waves-effect waves-light btn"><i class="material-icons">shuffle</i></a>
-              <div class="hover">VBGHFTHDTSH
-              <span class="hoverText">random</span>
+              <div class="random">
+                <a id="randomButton" class="waves-effect waves-light btn">
+                  <i class="material-icons">shuffle</i>
+                </a>
               </div>
             </div>
           </div>
