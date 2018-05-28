@@ -1,6 +1,6 @@
 html {
   background-color: #fdffff;
-  font-family: 'Fira Sans', sans-serif; }
+  font-family: "Fira Sans", sans-serif; }
 
 .charDropInfo {
   background-color: #fdffff;
@@ -169,20 +169,32 @@ footer.page-footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #C4C4B5;
-  color: #403C2E; }
+  background-color: #fdffff;
+  color: #000000; }
   footer.page-footer div.row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0em; }
+    margin-bottom: 0em;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000000;
+    margin: 10px;
+    padding: 0; }
     footer.page-footer div.row .questionsConcerns {
       display: flex;
+      justify-content: center;
       flex-direction: column;
-      align-content: center;
+      width: 96%;
+      margin: 4px;
+      border: 2px solid #000000;
       text-align: center;
       padding: 1em 0em 1em 0em;
-      color: #9E8C6D; }
+      font-family: "Dokdo", cursive;
+      text-transform: uppercase; }
+      footer.page-footer div.row .questionsConcerns p.email {
+        font-family: "Fira Sans", sans-serif;
+        text-transform: lowercase; }
       footer.page-footer div.row .questionsConcerns div.inkrGithubContainer {
         display: flex;
         flex-direction: row;
@@ -194,34 +206,57 @@ footer.page-footer {
           align-items: baseline;
           justify-content: center; }
         footer.page-footer div.row .questionsConcerns div.inkrGithubContainer a.biblio {
-          color: white; }
+          color: #000000;
+          font-family: "Fira Sans", sans-serif;
+          text-transform: lowercase; }
       footer.page-footer div.row .questionsConcerns img.githubLogo {
         margin: 0 1em 0 0; }
     footer.page-footer div.row .thankYou {
-      text-align: right;
-      padding-top: 0em;
       display: flex;
       flex-direction: column;
-      text-align: center; }
-      footer.page-footer div.row .thankYou .footerSub {
-        color: #9E8C6D; }
+      width: 96%;
+      margin: 4px;
+      border: 2px solid #000000;
+      text-align: right;
+      padding-top: 0em;
+      text-align: center;
+      color: #000000;
+      font-family: "Dokdo", cursive;
+      text-transform: uppercase; }
       footer.page-footer div.row .thankYou img {
         margin-right: 1em; }
       footer.page-footer div.row .thankYou a.biblio {
         align-items: baseline;
-        color: #96922B; }
-      footer.page-footer div.row .thankYou h5 {
-        color: #9E8C6D; }
+        color: #000000;
+        font-family: "Fira Sans", sans-serif;
+        text-transform: lowercase; }
   footer.page-footer .footer-copyright {
-    padding-top: 4em; }
-    footer.page-footer .footer-copyright .container {
-      margin-bottom: 0em;
-      color: #96922B; }
-      footer.page-footer .footer-copyright .container .roxGithub {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000000;
+    margin: 10px;
+    padding: 0; }
+    footer.page-footer .footer-copyright div.innerRow {
+      display: flex;
+      justify-content: center;
+      width: 96%;
+      margin: 4px;
+      border: 2px solid #000000; }
+      footer.page-footer .footer-copyright div.innerRow div.container {
         display: flex;
-        flex-direction: row;
-        color: #96922B; }
-        footer.page-footer .footer-copyright .container .roxGithub img.githubLogo {
-          margin: 0 1em 0 0; }
+        justify-content: space-between;
+        margin-bottom: 0em;
+        padding-top: 14px;
+        color: #000000; }
+        footer.page-footer .footer-copyright div.innerRow div.container a.roxGithub {
+          display: flex;
+          flex-direction: row;
+          color: #000000;
+          font-family: "Fira Sans", sans-serif;
+          text-transform: lowercase; }
+          footer.page-footer .footer-copyright div.innerRow div.container a.roxGithub img.githubLogo {
+            margin: 0 1em 0 0; }
+          footer.page-footer .footer-copyright div.innerRow div.container a.roxGithub p.githubName {
+            color: #000000; }
 
 /*# sourceMappingURL=base.css.map */

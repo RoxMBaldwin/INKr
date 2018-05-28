@@ -9,6 +9,7 @@ $black: #000000;
 $white: #fdffff;
 
 $mainFontFamily: 'Dokdo', cursive;
+$secondaryFontFamily: 'Fira Sans', sans-serif;
 
 $darkenSecondary-color: darken($secondary-color, 30%);
 $darkenPrimary-color: darken($primary-color, 20%);
@@ -22,7 +23,7 @@ $dropdown-margin-side: 4em;
 
 html {
   background-color: $white;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: $secondaryFontFamily;
 }
 
 .charDropInfo {
@@ -247,90 +248,111 @@ footer.page-footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: $tertiary-color;
-  color: $secondary-color;
-
+  background-color: $white;
+  color: $black;
   div.row {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 0em;
-
+    display: flex;
+    justify-content: center;
+    border: 2px solid $black;
+    margin: 10px;
+    padding: 0;
     .questionsConcerns {
       display: flex;
+      justify-content: center;
       flex-direction: column;
-      align-content: center;
+      width: 96%;
+      margin: 4px;
+      border: 2px solid $black;
       text-align: center;
       padding: 1em 0em 1em 0em;
-      color: $primary-color;
-
+      font-family: $mainFontFamily;
+      text-transform:uppercase;
+      h4.footerSub {
+        
+      }
+      p.email {
+        font-family: $secondaryFontFamily;
+        text-transform: lowercase;
+      }
       div.inkrGithubContainer{
         display: flex;
         flex-direction: row;
         align-items: baseline;
         justify-content: center;
-
         p.inkrGithub {
           display: flex;
           flex-direction: row;
           align-items: baseline;
           justify-content: center;
         }
-
         a.biblio {
-          color : white;
+          color: $black;
+          font-family: $secondaryFontFamily;
+          text-transform: lowercase;
         }
       }
-
       img.githubLogo {
         margin: 0 1em 0 0;
       }
-
     }
-
     .thankYou {
-      text-align: right;
-      padding-top: 0em;
       display: flex;
       flex-direction: column;
+      width: 96%;
+      margin: 4px;
+      border: 2px solid $black;
+      text-align: right;
+      padding-top: 0em;
       text-align: center;
-
-      .footerSub {
-        color: $primary-color;
-      }
-
+      color: $black;
+      font-family: $mainFontFamily;
+      text-transform:uppercase;
       img {
         margin-right: 1em;
       }
-
       a.biblio {
         align-items: baseline;
-        color: $quad-color;
+        color: $black;
+        font-family: $secondaryFontFamily;
+        text-transform: lowercase;
       }
-
-      h5 {
-        color: $primary-color
-      }
-
     }
   }
-
   .footer-copyright {
-    padding-top: 4em;
-
-    .container {
-      margin-bottom: 0em;
-      color: $quad-color;
-
-      .roxGithub {
+    display: flex;
+    justify-content: center;
+    border: 2px solid $black;
+    margin: 10px;
+    padding: 0;
+    div.innerRow {
+      display: flex;
+      justify-content: center;
+      width: 96%;
+      margin: 4px;
+      border: 2px solid $black;
+      div.container {
         display: flex;
-        flex-direction: row;
-        color: $quad-color;
-
-        img.githubLogo {
-          margin: 0 1em 0 0;
+        justify-content: space-between;
+        margin-bottom: 0em;
+        padding-top: 14px;
+        color: $black;
+        a.roxGithub {
+          display: flex;
+          flex-direction: row;
+          color: $black;
+          font-family: $secondaryFontFamily;
+          text-transform: lowercase;
+          img.githubLogo {
+            margin: 0 1em 0 0;
+          }
+          p.githubName {
+            color:$black;
+          }
         }
-
       }
     }
   }
