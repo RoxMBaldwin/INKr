@@ -80,12 +80,33 @@ main {
     main div.row1 div.innerRow {
       display: flex;
       justify-content: center;
+      flex-direction: row;
       width: 96%;
       margin: 4px;
       border: 2px solid #000000; }
+      main div.row1 div.innerRow #lineDrawing {
+        display: flex;
+        justify-content: center; }
+        main div.row1 div.innerRow #lineDrawing object {
+          position: sticky;
+          z-index: 1;
+          width: 100%; }
+          @media (max-width: 580px) {
+            main div.row1 div.innerRow #lineDrawing object {
+              height: 100%;
+              position: static;
+              z-index: 1; } }
       main div.row1 div.innerRow h3.inkrName {
         font-family: "Dokdo", cursive;
-        font-size: 100px; }
+        font-size: 100px;
+        z-index: 2;
+        position: absolute; }
+        @media (max-width: 580px) {
+          main div.row1 div.innerRow h3.inkrName {
+            z-index: 2;
+            position: absolute;
+            font-size: 50px;
+            margin: 0; } }
   main section.userInput .row2 {
     display: flex;
     justify-content: center;

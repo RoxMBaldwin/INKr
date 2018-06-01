@@ -133,12 +133,38 @@ main {
     div.innerRow{
       display: flex;
       justify-content: center;
+      flex-direction: row;
       width: 96%;
       margin: 4px;
       border: 2px solid $black;
+      #lineDrawing {
+        display: flex;
+        justify-content: center;
+
+        object {
+          position:sticky;
+          z-index: 1;
+          width: 100%;
+
+          @media (max-width: 580px){
+            height: 100%;
+            position: static;
+            z-index: 1
+          }
+        }
+      }
       h3.inkrName{
         font-family: $mainFontFamily;
         font-size: 100px;
+        z-index: 2;
+        position: absolute;
+
+        @media (max-width: 580px){
+          z-index: 2;
+          position: absolute;
+          font-size: 50px;
+          margin: 0;
+        }
       }
     }
   }
@@ -272,7 +298,7 @@ footer.page-footer {
       font-family: $mainFontFamily;
       text-transform:uppercase;
       h4.footerSub {
-        
+
       }
       p.email {
         font-family: $secondaryFontFamily;
