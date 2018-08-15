@@ -9,7 +9,8 @@ $black: #000000;
 $white: #fdffff;
 
 $mainFontFamily: 'Dokdo', cursive;
-$secondaryFontFamily: 'Fira Sans', sans-serif;
+// $secondaryFontFamily: 'Fira Sans', sans-serif;
+$secondaryFontFamily: 'Source Code Pro', monospace;
 
 $darkenSecondary-color: darken($secondary-color, 30%);
 $darkenPrimary-color: darken($primary-color, 20%);
@@ -18,7 +19,7 @@ $darkenPrimary-color: darken($primary-color, 20%);
 $main-margin: 2em;
 $secondary-margin: 1em;
 $dropdown-margin-top: 5em;
-$dropdown-margin-side: 4em;
+$dropdown-margin-side: 0em;
 
 
 html {
@@ -104,7 +105,6 @@ html {
   #dropdown2 {
     margin-right: $dropdown-margin-side;
     margin-top: $dropdown-margin-top;
-    width: 100%;
   }
 
   div.col.s12.m12 {
@@ -124,7 +124,7 @@ body {
 
 main {
   flex: 1 0 auto;
-  margin-bottom: 34em;
+  margin-bottom: 28em;
   div.row1{
     display: flex;
     justify-content: center;
@@ -142,7 +142,7 @@ main {
         justify-content: center;
 
         object {
-          position:sticky;
+          // position:initial;
           z-index: 1;
           width: 100%;
 
@@ -249,7 +249,7 @@ canvas#canvas {
   z-index: 3;
   img.charImage {
     padding: 1em;
-    margin: 1em;
+    margin-top: 1em;
     border: 2em;
 
     -webkit-touch-callout: none;
@@ -297,6 +297,7 @@ footer.page-footer {
       padding: 1em 0em 1em 0em;
       font-family: $mainFontFamily;
       text-transform:uppercase;
+
       h4.footerSub {
 
       }

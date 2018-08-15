@@ -1,6 +1,6 @@
 html {
   background-color: #fdffff;
-  font-family: "Fira Sans", sans-serif; }
+  font-family: "Source Code Pro", monospace; }
 
 .charDropInfo {
   background-color: #fdffff;
@@ -53,12 +53,11 @@ html {
     color: #000000;
     font-size: 30px; }
   .nav-wrapper #dropdown1 {
-    margin-left: 4em;
+    margin-left: 0em;
     margin-top: 5em; }
   .nav-wrapper #dropdown2 {
-    margin-right: 4em;
-    margin-top: 5em;
-    width: 100%; }
+    margin-right: 0em;
+    margin-top: 5em; }
   .nav-wrapper div.col.s12.m12 {
     background-color: white; }
     .nav-wrapper div.col.s12.m12 .logoCard {
@@ -71,7 +70,7 @@ body {
 
 main {
   flex: 1 0 auto;
-  margin-bottom: 34em; }
+  margin-bottom: 28em; }
   main div.row1 {
     display: flex;
     justify-content: center;
@@ -88,7 +87,6 @@ main {
         display: flex;
         justify-content: center; }
         main div.row1 div.innerRow #lineDrawing object {
-          position: sticky;
           z-index: 1;
           width: 100%; }
           @media (max-width: 580px) {
@@ -169,7 +167,7 @@ canvas#canvas {
   z-index: 3; }
   .comicVine img.charImage {
     padding: 1em;
-    margin: 1em;
+    margin-top: 1em;
     border: 2em;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -214,7 +212,7 @@ footer.page-footer {
       font-family: "Dokdo", cursive;
       text-transform: uppercase; }
       footer.page-footer div.row .questionsConcerns p.email {
-        font-family: "Fira Sans", sans-serif;
+        font-family: "Source Code Pro", monospace;
         text-transform: lowercase; }
       footer.page-footer div.row .questionsConcerns div.inkrGithubContainer {
         display: flex;
@@ -228,7 +226,7 @@ footer.page-footer {
           justify-content: center; }
         footer.page-footer div.row .questionsConcerns div.inkrGithubContainer a.biblio {
           color: #000000;
-          font-family: "Fira Sans", sans-serif;
+          font-family: "Source Code Pro", monospace;
           text-transform: lowercase; }
       footer.page-footer div.row .questionsConcerns img.githubLogo {
         margin: 0 1em 0 0; }
@@ -249,7 +247,7 @@ footer.page-footer {
       footer.page-footer div.row .thankYou a.biblio {
         align-items: baseline;
         color: #000000;
-        font-family: "Fira Sans", sans-serif;
+        font-family: "Source Code Pro", monospace;
         text-transform: lowercase; }
   footer.page-footer .footer-copyright {
     display: flex;
@@ -273,7 +271,7 @@ footer.page-footer {
           display: flex;
           flex-direction: row;
           color: #000000;
-          font-family: "Fira Sans", sans-serif;
+          font-family: "Source Code Pro", monospace;
           text-transform: lowercase; }
           footer.page-footer .footer-copyright div.innerRow div.container a.roxGithub img.githubLogo {
             margin: 0 1em 0 0; }
